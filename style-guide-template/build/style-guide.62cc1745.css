@@ -80,6 +80,24 @@ h1 {
   }
 }
 
+.slideHeadings {
+  font-family: "Shrikhand", cursive;
+  font-size: 2.4rem;
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 0 0 0.4em;
+}
+@media only screen and (min-width: 768px) {
+  .slideHeadings {
+    font-size: 3.2rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .slideHeadings {
+    font-size: 4rem;
+  }
+}
+
 h2 {
   font-weight: bold;
   text-transform: uppercase;
@@ -98,7 +116,7 @@ section > h2::before {
 }
 
 p {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   line-height: 1.4;
   color: #c4977e;
 }
@@ -135,7 +153,6 @@ header {
 
 .cd-main-nav {
   /* main navigation background color - full screen on small devices */
-  background: #85573d;
 }
 .cd-main-nav li a {
   color: #ffffff;
@@ -170,6 +187,25 @@ header {
 .nav-is-visible .cd-nav-trigger span::before, .nav-is-visible .cd-nav-trigger span::after {
   /* preserve visibility of upper and lower lines - close icon */
   background-color: white;
+}
+
+.cd-primary-nav,
+.cd-secondary-nav,
+.otherlinks {
+  background-color: #81d2af;
+  color: #ffffff;
+  font-family: "Montserrat", san-serif;
+}
+
+ul a {
+  color: #ffffff;
+}
+
+.cd-box h3 {
+  font-family: "Fredericka the Great", cursive;
+  font-size: 2rem;
+  background-color: #81d2af;
+  color: #85573d;
 }
 
 .cd-download {
@@ -428,7 +464,9 @@ select {
 xBasic style
 
 -------------------------------- */
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -456,7 +494,9 @@ img {
   max-width: 100%;
 }
 
-input, textarea, select {
+input,
+textarea,
+select {
   font-family: "Montserrat", san-serif;
   font-size: 1.6rem;
 }
