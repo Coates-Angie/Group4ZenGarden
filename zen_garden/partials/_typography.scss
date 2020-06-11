@@ -1,0 +1,78 @@
+/* -------------------------------- 
+
+xTypography 
+
+-------------------------------- */
+
+//fonts 
+$primary-font:'Montserrat',
+san-serif;
+$secondary-font:'Fredericka the Great',
+cursive;
+$slideheading-font:'shrikhand',
+cursive;
+h1 {
+    font-family: $secondary-font;
+    color: $color-2;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 0 0 0.4em;
+    @include MQ(M) {
+        font-size: 2.0rem;
+    }
+    @include MQ(L) {
+        font-size: 2.3rem;
+    }
+}
+
+header h2 {
+    font-family: $secondary-font;
+    color: $color-4;
+    margin: 1em 0;
+    font-size: 1.2rem;
+    @include MQ(M) {
+        font-size: 1.5rem;
+    }
+    @include MQ(L) {
+        font-size: 1.7rem;
+    }
+}
+
+h3 {
+    font-family: $slideheading-font;
+    color: $color-2;
+    @include MQ(S) {
+        font-size: 1.7rem;
+    }
+    @include MQ(M) {
+        font-size: 1.9rem;
+    }
+}
+
+h3.select,
+h3.archives,
+h3.resources {
+    font-family: $secondary-font;
+}
+
+section>h2::before {
+    /* number before each section title */
+    color: darken($color-4, 15%);
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1;
+    color: lighten($color-2, 20%);
+    a {
+        color: $color-1;
+        text-decoration: underline;
+    }
+    @include MQ(M) {
+        font-size: 1.3rem;
+    }
+    @include MQ(L) {
+        font-size: 1.3rem;
+    }
+}

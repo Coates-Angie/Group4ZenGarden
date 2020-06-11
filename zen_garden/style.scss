@@ -1,0 +1,71 @@
+        @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Montserrat&family=Shrikhand&display=swap');
+        @import 'partials/prefix-mixins';
+        @import 'partials/layout'; // responsive grid and media queries
+        @import 'partials/colors'; //color palette - these colors will be the color swatches of the Colors section $color-1: #81d2af; // mint - Action color
+        @import 'partials/typography'; //typography
+        *,
+        *::after,
+        *::before {
+            @include box-sizing(border-box);
+        }
+        
+        html {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-color: $color-5;
+        }
+        /*specific divs*/
+        
+        .page-wrapper {
+            display: flex;
+            margin: 20px;
+            flex-flow: column wrap;
+            justify-content: flex-start;
+            @include MQ(M) {
+                flex-flow: row wrap;
+                flex-basis: 100%;
+                flex: 1;
+            }
+            @include MQ(L) {
+                flex-flow: row wrap;
+                flex-basis: 100%;
+                flex: 1;
+            }
+        }
+        
+        .summary {
+            font-style: italic;
+        }
+        
+        .intro,
+        summary {
+            width: 100%;
+            @include MQ(M) {
+                flex-basis: 100%;
+                flex: 2;
+                width: 60%
+            }
+            @include MQ(L) {
+                flex-basis: 100%;
+                flex: 2;
+                width: 60%;
+            }
+        }
+        
+        .preamble,
+        .explanation,
+        .participation,
+        .benefits,
+        .requirements {
+            width: 100%;
+            @include MQ(M) {
+                width: 40%;
+            }
+            @include MQ(L) {
+                width: 40%;
+            }
+        }
+        /*# sourceMappingURL=style.scss.map */

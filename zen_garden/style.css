@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Montserrat&family=Shrikhand&display=swap");
+/* -------------------------------- 
+
+xTypography 
+
+-------------------------------- */
+h1 {
+  font-family: "Fredericka the Great", cursive;
+  color: #85573d;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 0 0 0.4em;
+}
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  h1 {
+    font-size: 2.3rem;
+  }
+}
+
+header h2 {
+  font-family: "Fredericka the Great", cursive;
+  color: #f4c56a;
+  margin: 1em 0;
+  font-size: 1.2rem;
+}
+@media only screen and (min-width: 768px) {
+  header h2 {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  header h2 {
+    font-size: 1.7rem;
+  }
+}
+
+h3 {
+  font-family: "shrikhand", cursive;
+  color: #85573d;
+}
+@media only screen and (min-width: 360px) {
+  h3 {
+    font-size: 1.7rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  h3 {
+    font-size: 1.9rem;
+  }
+}
+
+h3.select,
+h3.archives,
+h3.resources {
+  font-family: "Fredericka the Great", cursive;
+}
+
+section > h2::before {
+  /* number before each section title */
+  color: #efa923;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1;
+  color: #bc896c;
+}
+p a {
+  color: #81d2af;
+  text-decoration: underline;
+}
+@media only screen and (min-width: 768px) {
+  p {
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  p {
+    font-size: 1.3rem;
+  }
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+/*specific divs*/
+.page-wrapper {
+  display: flex;
+  margin: 20px;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+}
+@media only screen and (min-width: 768px) {
+  .page-wrapper {
+    flex-flow: row wrap;
+    flex-basis: 100%;
+    flex: 1;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .page-wrapper {
+    flex-flow: row wrap;
+    flex-basis: 100%;
+    flex: 1;
+  }
+}
+
+.summary {
+  font-style: italic;
+}
+
+.intro,
+summary {
+  width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  .intro,
+summary {
+    flex-basis: 100%;
+    flex: 2;
+    width: 60%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .intro,
+summary {
+    flex-basis: 100%;
+    flex: 2;
+    width: 60%;
+  }
+}
+
+.preamble,
+.explanation,
+.participation,
+.benefits,
+.requirements {
+  width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  .preamble,
+.explanation,
+.participation,
+.benefits,
+.requirements {
+    width: 40%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .preamble,
+.explanation,
+.participation,
+.benefits,
+.requirements {
+    width: 40%;
+  }
+}
+
+/*# sourceMappingURL=style.scss.map */
+
+/*# sourceMappingURL=style.css.map */
