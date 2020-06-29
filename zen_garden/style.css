@@ -6,10 +6,10 @@ xTypography
 -------------------------------- */
 h1 {
   font-family: "Fredericka the Great", cursive;
-  color: #85573d;
-  font-size: 1.8rem;
-  font-weight: 300;
-  line-height: 1.2;
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1;
   margin: 0 0 0.4em;
 }
 @media only screen and (min-width: 768px) {
@@ -19,7 +19,7 @@ h1 {
 }
 @media only screen and (min-width: 1024px) {
   h1 {
-    font-size: 2.3rem;
+    font-size: 2.1rem;
   }
 }
 
@@ -36,22 +36,22 @@ header h2 {
 }
 @media only screen and (min-width: 1024px) {
   header h2 {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
   }
 }
 
 h3 {
   font-family: "shrikhand", cursive;
-  color: #85573d;
+  color: #e75443;
 }
 @media only screen and (min-width: 360px) {
   h3 {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
   }
 }
 @media only screen and (min-width: 768px) {
   h3 {
-    font-size: 1.9rem;
+    font-size: 1.7rem;
   }
 }
 
@@ -59,17 +59,44 @@ h3.select,
 h3.archives,
 h3.resources {
   font-family: "Fredericka the Great", cursive;
+  color: #85573d;
+}
+@media only screen and (min-width: 360px) {
+  h3.select,
+h3.archives,
+h3.resources {
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  h3.select,
+h3.archives,
+h3.resources {
+    font-size: 1rem;
+  }
 }
 
-section > h2::before {
-  /* number before each section title */
-  color: #efa923;
+.preamble h3 {
+  font-family: "Fredericka the Great", cursive;
+  color: #f4c56a;
+  font-weight: 300;
+}
+@media only screen and (min-width: 768px) {
+  .preamble h3 {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .preamble h3 {
+    font-size: 1.5rem;
+  }
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 1;
-  color: #bc896c;
+  color: #a86e4d;
+  text-align: left;
 }
 p a {
   color: #81d2af;
@@ -77,12 +104,32 @@ p a {
 }
 @media only screen and (min-width: 768px) {
   p {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 }
 @media only screen and (min-width: 1024px) {
   p {
-    font-size: 1.3rem;
+    font-size: 1rem;
+  }
+}
+
+.intro p {
+  color: #ffffff;
+  font-weight: 100;
+}
+
+.summary {
+  font-style: italic;
+}
+
+@media only screen and (min-width: 768px) {
+  .sidebar ul li a {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .sidebar ul li a {
+    font-size: 0.8rem;
   }
 }
 
@@ -100,82 +147,59 @@ html {
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #383838;
+  background-image: url(/projector.svg) no-repeat bottom left;
 }
 
 /*specific divs*/
 .page-wrapper {
-  display: flex;
-  margin: 20px;
-  flex-flow: column wrap;
-  justify-content: flex-start;
+  display: grid;
+  grid-template-columns: 100%;
+  margin: 2%;
+  grid-column-gap: 3em;
 }
 @media only screen and (min-width: 768px) {
   .page-wrapper {
-    flex-flow: row wrap;
-    flex-basis: 100%;
-    flex: 1;
+    grid-template-columns: 50% 31% 15%;
+    grid-column-gap: 1em;
   }
 }
 @media only screen and (min-width: 1024px) {
   .page-wrapper {
-    flex-flow: row wrap;
-    flex-basis: 100%;
-    flex: 1;
+    grid-template-columns: 50% 31% 15%;
+    grid-column-gap: 2em;
   }
 }
 
-.summary {
-  font-style: italic;
+.main {
+  background-image: url("/projector-screen.png") no repeat;
+  padding: 10px;
+  margin-top: 20px;
+  height: 480px;
+  background-color: #fdf7ea;
+  border-radius: 15px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  text-align: center;
 }
 
-.intro,
-summary {
-  width: 100%;
-}
-@media only screen and (min-width: 768px) {
-  .intro,
-summary {
-    flex-basis: 100%;
-    flex: 2;
-    width: 60%;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  .intro,
-summary {
-    flex-basis: 100%;
-    flex: 2;
-    width: 60%;
-  }
+.intro {
+  background-color: #1e1e1e;
+  padding: 1em;
+  border: 15px solid #81d2af;
+  height: 500px;
 }
 
-.preamble,
-.explanation,
-.participation,
-.benefits,
-.requirements {
-  width: 100%;
-}
-@media only screen and (min-width: 768px) {
-  .preamble,
-.explanation,
-.participation,
-.benefits,
-.requirements {
-    width: 40%;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  .preamble,
-.explanation,
-.participation,
-.benefits,
-.requirements {
-    width: 40%;
-  }
+.wrapper {
+  background-color: #f4c56a;
+  margin-top: 20px;
+  padding: 0.5em;
+  border: 5px solid #e75443;
+  border-radius: 1em;
+  height: 600px;
+  overflow: hidden;
 }
 
-/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map*/
 
 /*# sourceMappingURL=style.css.map */
