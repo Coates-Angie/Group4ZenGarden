@@ -16,7 +16,6 @@ html {
 
 body {
     background-color: lighten($color-6, 10%);
-    background-image: url(/projector.svg) no-repeat bottom left;
 }
 
 
@@ -27,27 +26,38 @@ body {
     grid-template-columns: 100%;
     margin: 2%;
     grid-column-gap: 3em;
+    height: 100%;
     @include MQ(M) {
-        grid-template-columns: 50% 31% 15%;
+        grid-template-columns: 40% 45% 11%;
         grid-column-gap: 1em;
     }
     @include MQ(L) {
-        grid-template-columns: 50% 31% 15%;
+        grid-template-columns: 40% 45% 11%;
         grid-column-gap: 2em;
     }
 }
 
 .main {
-    //display: block;
-    background-image: url("/projector-screen.png")no repeat;
-    padding: 10px;
-    margin-top: 20px;
-    height: 480px;
-    background-color: lighten($color-4, 27%);
-    border-radius: 15px;
+    background: url("/projector-screen.png") no-repeat;
+    background-position-x: center;
+    height: 500px;
     overflow-y: scroll;
     scroll-behavior: smooth;
     text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 15px;
+    /* IE and Edge hide scrollbar*/
+    -ms-overflow-style: none;
+    /* hide scrollbar in Firefox */
+    scrollbar-width: none;
+}
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+
+.main::-webkit-scrollbar {
+    display: none;
 }
 
 .intro {
@@ -55,6 +65,7 @@ body {
     padding: 1em;
     border: 15px solid $color-1;
     height: 500px;
+    overflow: hidden;
 }
 
 .wrapper {
@@ -65,6 +76,15 @@ body {
     border-radius: 1em;
     height: 600px;
     overflow: hidden;
+}
+
+.explanation,
+.participation,
+.benefits,
+.requirements,
+footer {
+    margin-bottom: 3em;
+    margin-top: 2em;
 }
 
 
