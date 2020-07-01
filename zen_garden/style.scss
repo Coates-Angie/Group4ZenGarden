@@ -51,6 +51,8 @@ body {
     -ms-overflow-style: none;
     /* hide scrollbar in Firefox */
     scrollbar-width: none;
+    display: flex;
+    flex-flow: row wrap;
 }
 
 
@@ -85,6 +87,7 @@ body {
 footer {
     margin-bottom: 3em;
     margin-top: 2em;
+    flex-shrink: initial;
 }
 
 
