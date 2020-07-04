@@ -11,18 +11,24 @@ $secondary-font:'Fredericka the Great',
 cursive;
 $slideheading-font:'shrikhand',
 cursive;
+body {
+    color: $color-5;
+}
+
 h1 {
     font-family: $secondary-font;
     color: $color-5;
-    font-size: 1.5rem;
+    font-size: 2.0rem;
     font-weight: 400;
     line-height: 1;
     margin: 0 0 0.4em;
     @include MQ(M) {
-        font-size: 2.0rem;
+        font-size: 2.5rem;
+        text-align: left;
     }
     @include MQ(L) {
-        font-size: 2.1rem;
+        font-size: 3rem;
+        text-align: left;
     }
 }
 
@@ -54,7 +60,7 @@ h3.select,
 h3.archives,
 h3.resources {
     font-family: $secondary-font;
-    color: $color-2;
+    color: $color-4;
     @include MQ(S) {
         font-size: 1rem;
     }
@@ -78,11 +84,14 @@ h3.resources {
 p {
     font-size: 1rem;
     line-height: 1;
-    color: lighten($color-2, 10%);
+    color: darken($color-2, 15%);
     text-align: left;
     a {
-        color: $color-1;
+        color: darken($color-1, 20%);
         text-decoration: underline;
+    }
+    a:hover {
+        color: $color-3;
     }
     @include MQ(M) {
         font-size: 1rem;
