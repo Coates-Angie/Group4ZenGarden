@@ -156,7 +156,8 @@ html {
 }
 
 body {
-  background-color: #62402d;
+  background: url(./background3a1.png) no-repeat;
+  z-index: -1;
 }
 
 /*specific divs*/
@@ -169,26 +170,27 @@ body {
 }
 @media only screen and (min-width: 860px) {
   .page-wrapper {
-    grid-template-columns: 40% 45% 11%;
+    grid-template-columns: 45% 38% 13%;
     grid-column-gap: 1em;
   }
 }
 @media only screen and (min-width: 1200px) {
   .page-wrapper {
-    grid-template-columns: 40% 45% 11%;
+    grid-template-columns: 45% 38% 13%;
     grid-column-gap: 2em;
   }
 }
 
 .main {
-  height: 500px;
+  height: 560px;
   text-align: center;
   margin-top: 10px;
   margin-bottom: 20px;
-  padding: 15px;
+  padding: 20px;
   display: flex;
   flex-flow: row wrap;
   position: relative;
+  overflow: hidden;
 }
 .main::before {
   content: "";
@@ -207,8 +209,9 @@ body {
   background-color: #1e1e1e;
   padding: 1em;
   border: 15px solid #81d2af;
-  height: 500px;
+  height: 560px;
   line-height: 2;
+  margin-top: 10px;
   overflow: hidden;
 }
 .intro header {
@@ -221,11 +224,22 @@ body {
     background-position: 90% 50%;
   }
 }
+.intro::after {
+  content: "";
+  background: url(./projector2.png) no-repeat;
+  position: absolute;
+  bottom: 0;
+  left: 18%;
+  background-size: 100% 100%;
+  display: block;
+  width: 27%;
+  height: 27%;
+}
 
 /*Long Side Chalkboard*/
 .wrapper {
   background-color: #1e1e1e;
-  margin-top: 20px;
+  margin-top: 10px;
   padding: 0.5em;
   border: 10px solid #81d2af;
   height: 100%;
@@ -236,8 +250,7 @@ body {
 .explanation,
 .participation,
 .benefits,
-.requirements,
-footer {
+.requirements {
   margin-bottom: 3em;
   margin-top: 2em;
   flex-shrink: initial;
@@ -249,20 +262,40 @@ footer {
   opacity: 0;
 }
 
+footer {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  opacity: 0;
+}
+footer a {
+  padding: 5px;
+  color: #3eaf7e;
+}
+footer a:hover {
+  color: #e75443;
+}
+
 .explanation {
-  animation: explanation-animation 30s ease-out infinite;
+  animation: explanation-animation 20s ease-out infinite;
 }
 
 .participation {
-  animation: participation-animation 30s ease-out infinite;
+  animation: participation-animation 20s ease-out infinite;
 }
 
 .benefits {
-  animation: benefits-animation 30s ease-out infinite;
+  animation: benefits-animation 20s ease-out infinite;
 }
 
 .requirements {
-  animation: requirements-animation 30s ease-out infinite;
+  animation: requirements-animation 20s ease-out infinite;
+}
+
+footer {
+  animation: benefits-animation 20s ease-out infinite;
 }
 
 @keyframes explanation-animation {
@@ -286,6 +319,9 @@ footer {
   25% {
     opacity: 100%;
   }
+  40% {
+    opacity: 100%;
+  }
   45% {
     opacity: 0%;
   }
@@ -300,6 +336,26 @@ footer {
   50% {
     opacity: 100%;
   }
+  65% {
+    opacity: 100%;
+  }
+  70% {
+    opacity: 0%;
+  }
+}
+@keyframes footer-animation {
+  0% {
+    opacity: 0%;
+  }
+  40% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 100%;
+  }
+  65% {
+    opacity: 100%;
+  }
   70% {
     opacity: 0%;
   }
@@ -312,6 +368,9 @@ footer {
     opacity: 0%;
   }
   75% {
+    opacity: 100%;
+  }
+  95% {
     opacity: 100%;
   }
   100% {
@@ -335,7 +394,40 @@ footer {
 .sidebar li:nth-child(3n+0) {
   list-style-image: url("./flower-yellowsm.png");
 }
+.sidebar::after {
+  content: "";
+  background: url(./grey-light.png) no-repeat;
+  position: absolute;
+  bottom: 140px;
+  left: 43%;
+  background-size: 100% 100%;
+  display: block;
+  width: 39%;
+  height: 76%;
+  opacity: 0;
+  animation: flickr 20s linear infinite;
+}
+@media only screen and (min-width: 500px) {
+  .sidebar::after {
+    background: hidden;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .sidebar::after {
+    grid-template-columns: 45% 38% 13%;
+    grid-column-gap: 2em;
+  }
+}
 
+/*light animation*/
+@keyframes flickr {
+  10%, 30%, 60%, 75% {
+    opacity: 1;
+  }
+  20%, 40%, 72% {
+    opacity: 0;
+  }
+}
 .design-name,
 .designer-name,
 .design-archives a,
