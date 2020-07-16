@@ -15,9 +15,7 @@ html {
 }
 
 body {
-    //background: url(./brickWall.jpg);
-    //background-color: darken($color-2, 10%);
-    background: url(./background3a1.png) no-repeat;
+    background: url(./background3a1.png) no-repeat fixed center;
     z-index: -1;
 }
 
@@ -27,11 +25,11 @@ body {
 .page-wrapper {
     display: grid;
     grid-template-columns: 100%;
-    margin: 2%;
+    margin: 1em;
     grid-column-gap: 3em;
     height: 100%;
     @include MQ(M) {
-        grid-template-columns: 45% 38% 13%;
+        grid-template-columns: 35% 38% 23%;
         grid-column-gap: 1em;
     }
     @include MQ(L) {
@@ -41,10 +39,10 @@ body {
 }
 
 .main {
-    height: 560px;
+    height: 500px;
     text-align: center;
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     padding: 20px;
     display: flex;
     flex-flow: row wrap;
@@ -70,28 +68,47 @@ body {
     background-color: $color-6;
     padding: 1em;
     border: 15px solid $color-1;
-    height: 560px;
+    height: 500px;
     line-height: 2;
     margin-top: 10px;
     overflow: hidden;
     header {
         background: url(./coral-md.png)no-repeat;
-        background-position: 90% 50%;
+        background-size: 4em;
+        background-position: 100% 10%;
+        @include MQ(M) {
+            background: url(./flower-coral.png)no-repeat;
+            background-position: 100% 5%;
+            background-size: 4em;
+        }
         @include MQ(L) {
             background: url(./flower-coral.png)no-repeat;
-            background-position: 90% 50%;
+            background-position: 90% 10%;
+            background-size: 5.5em;
         }
     }
     &::after {
         content: "";
-        background: url(./projector2.png) no-repeat;
+        background: url(./desk.svg) no-repeat;
         position: absolute;
         bottom: 0;
-        left: 18%;
+        left: 0;
         background-size: 100% 100%;
-        display: block;
-        width: 27%;
-        height: 27%;
+        display: none;
+        width: 52%;
+        height: 37%;
+        z-index: 5;
+        @include MQ(M) {
+            display: block;
+            bottom: 10%;
+            left: 0;
+            background-size: 88% 83%;
+        }
+        @include MQ(L) {
+            display: block;
+            bottom: 0;
+            left: 3%;
+        }
     }
 }
 
@@ -102,8 +119,8 @@ body {
     background-color: $color-6;
     margin-top: 10px;
     padding: .5em;
-    border: 10px solid $color-1;
-    height: 100%;
+    border: 10px solid $color-4;
+    height: 800px;
     overflow: hidden;
 }
 
@@ -114,7 +131,7 @@ body {
 .participation,
 .benefits,
 .requirements {
-    margin-bottom: 3em;
+    margin-bottom: 1.5em;
     margin-top: 2em;
     flex-shrink: initial;
     position: absolute;
@@ -123,10 +140,12 @@ body {
     transform: translateX(-50%);
     width: 90%;
     opacity: 0;
+    z-index: 4;
 }
 
 footer {
     position: absolute;
+    z-index: 3;
     bottom: 50px;
     left: 50%;
     transform: translateX(-50%);
@@ -250,6 +269,7 @@ footer {
 
 .sidebar {
     display: flex;
+    width: 100%;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-evenly;
@@ -267,20 +287,28 @@ footer {
         content: "";
         background: url(./grey-light.png) no-repeat;
         position: absolute;
-        bottom: 140px;
-        left: 43%;
+        bottom: 28%;
+        left: 44%;
         background-size: 100% 100%;
-        display: block;
-        width: 39%;
-        height: 76%;
+        display: none;
+        width: 38%;
+        height: 65%;
         opacity: 0;
         animation: flickr 20s linear infinite;
-        @include MQ(S) {
-            background: hidden;
+        display: none;
+        @include MQ(M) {
+            display: block;
+            bottom: 36%;
+            left: 38%;
+            height: 57%;
+            width: 36%;
         }
         @include MQ(L) {
-            grid-template-columns: 45% 38% 13%;
-            grid-column-gap: 2em;
+            display: block;
+            bottom: 30%;
+            left: 39%;
+            width: 44%;
+            height: 64%;
         }
     }
 }

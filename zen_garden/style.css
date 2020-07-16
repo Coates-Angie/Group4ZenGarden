@@ -1,447 +1,547 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Montserrat&family=Shrikhand&display=swap");
+
 /* -------------------------------- 
 
 xTypography 
 
 -------------------------------- */
+
 body {
-  color: #ffffff;
+    color: #ffffff;
 }
 
 h1 {
-  font-family: "Fredericka the Great", cursive;
-  color: #ffffff;
-  font-size: 2rem;
-  font-weight: 400;
-  line-height: 1;
-  margin: 0 0 0.4em;
-}
-@media only screen and (min-width: 860px) {
-  h1 {
+    font-family: "Fredericka the Great", cursive;
+    color: #ffffff;
     font-size: 2.5rem;
-    text-align: left;
-  }
+    font-weight: 400;
+    line-height: 1;
+    margin: 0 0 0.4em;
 }
-@media only screen and (min-width: 1200px) {
-  h1 {
-    font-size: 3rem;
-    text-align: left;
-  }
+
+@media only screen and (min-width: 768px) {
+    h1 {
+        font-size: 2rem;
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    h1 {
+        font-size: 2.9rem;
+        text-align: left;
+    }
 }
 
 header h2 {
-  font-family: "Fredericka the Great", cursive;
-  color: #f4c56a;
-  margin: 1em 0;
-  font-size: 1.2rem;
+    font-family: "Fredericka the Great", cursive;
+    color: #f4c56a;
+    font-size: 1.2rem;
 }
-@media only screen and (min-width: 860px) {
-  header h2 {
-    font-size: 1.5rem;
-  }
+
+@media only screen and (min-width: 768px) {
+    header h2 {
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+    }
 }
-@media only screen and (min-width: 1200px) {
-  header h2 {
-    font-size: 1.5rem;
-  }
+
+@media only screen and (min-width: 1024px) {
+    header h2 {
+        font-size: 1.5rem;
+    }
 }
 
 h3 {
-  font-family: "shrikhand", cursive;
-  color: #e75443;
+    font-family: "shrikhand", cursive;
+    color: #e75443;
+    font-size: 1.6rem;
 }
-@media only screen and (min-width: 500px) {
-  h3 {
-    font-size: 1.5rem;
-  }
+
+@media only screen and (min-width: 768px) {
+    h3 {
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+    }
 }
-@media only screen and (min-width: 860px) {
-  h3 {
-    font-size: 1.7rem;
-  }
+
+@media only screen and (min-width: 1024px) {
+    h3 {
+        font-size: 1.7rem;
+    }
 }
 
 h3.select,
 h3.archives,
 h3.resources {
-  font-family: "Fredericka the Great", cursive;
-  color: #f4c56a;
-}
-@media only screen and (min-width: 500px) {
-  h3.select,
-h3.archives,
-h3.resources {
+    font-family: "Fredericka the Great", cursive;
     font-size: 1rem;
-  }
+    color: #f4c56a;
 }
-@media only screen and (min-width: 860px) {
-  h3.select,
-h3.archives,
-h3.resources {
-    font-size: 1rem;
-  }
+
+@media only screen and (min-width: 768px) {
+    h3.select,
+    h3.archives,
+    h3.resources {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    h3.select,
+    h3.archives,
+    h3.resources {
+        font-size: 1rem;
+    }
 }
 
 .preamble h3 {
-  font-family: "Fredericka the Great", cursive;
-  color: #f4c56a;
-  font-weight: 300;
+    font-family: "Fredericka the Great", cursive;
+    color: #f4c56a;
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1;
 }
-@media only screen and (min-width: 860px) {
-  .preamble h3 {
-    font-size: 1.5rem;
-  }
+
+@media only screen and (min-width: 768px) {
+    .preamble h3 {
+        font-size: 1.3rem;
+    }
 }
-@media only screen and (min-width: 1200px) {
-  .preamble h3 {
-    font-size: 1.5rem;
-  }
+
+@media only screen and (min-width: 1024px) {
+    .preamble h3 {
+        font-size: 1.5rem;
+    }
 }
 
 p {
-  font-size: 1rem;
-  line-height: 1;
-  color: #513525;
-  text-align: left;
+    font-size: 1rem;
+    line-height: 1;
+    color: #513525;
+    text-align: left;
 }
+
 p a {
-  color: #3eaf7e;
-  text-decoration: underline;
+    color: #3eaf7e;
+    text-decoration: underline;
 }
+
 p a:hover {
-  color: #e75443;
+    color: #e75443;
 }
-@media only screen and (min-width: 860px) {
-  p {
-    font-size: 1rem;
-  }
+
+@media only screen and (min-width: 768px) {
+    p {
+        font-size: 1rem;
+    }
 }
-@media only screen and (min-width: 1200px) {
-  p {
-    font-size: 1rem;
-  }
+
+@media only screen and (min-width: 1024px) {
+    p {
+        font-size: 1rem;
+    }
 }
 
 .intro p {
-  color: #ffffff;
-  font-weight: 100;
+    color: #ffffff;
+    font-weight: 100;
 }
 
 .summary {
-  font-style: italic;
+    font-style: italic;
 }
 
-@media only screen and (min-width: 860px) {
-  .sidebar ul li a {
-    font-size: 0.8rem;
-  }
+@media only screen and (min-width: 768px) {
+    .sidebar ul li a {
+        font-size: 0.8rem;
+    }
 }
-@media only screen and (min-width: 1200px) {
-  .sidebar ul li a {
-    font-size: 0.8rem;
-  }
+
+@media only screen and (min-width: 1024px) {
+    .sidebar ul li a {
+        font-size: 0.8rem;
+    }
 }
 
 *,
 *::after,
 *::before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-  background: url(./background3a1.png) no-repeat;
-  z-index: -1;
+    background: url(./background3a1.png) no-repeat fixed center;
+    z-index: -1;
 }
 
+
 /*specific divs*/
+
 .page-wrapper {
-  display: grid;
-  grid-template-columns: 100%;
-  margin: 2%;
-  grid-column-gap: 3em;
-  height: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    margin: 1em;
+    grid-column-gap: 3em;
+    height: 100%;
 }
-@media only screen and (min-width: 860px) {
-  .page-wrapper {
-    grid-template-columns: 45% 38% 13%;
-    grid-column-gap: 1em;
-  }
+
+@media only screen and (min-width: 768px) {
+    .page-wrapper {
+        grid-template-columns: 35% 38% 23%;
+        grid-column-gap: 1em;
+    }
 }
-@media only screen and (min-width: 1200px) {
-  .page-wrapper {
-    grid-template-columns: 45% 38% 13%;
-    grid-column-gap: 2em;
-  }
+
+@media only screen and (min-width: 1024px) {
+    .page-wrapper {
+        grid-template-columns: 45% 38% 13%;
+        grid-column-gap: 2em;
+    }
 }
 
 .main {
-  height: 560px;
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  padding: 20px;
-  display: flex;
-  flex-flow: row wrap;
-  position: relative;
-  overflow: hidden;
+    height: 500px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+    overflow: hidden;
 }
+
 .main::before {
-  content: "";
-  background: url(./projector-screen.png) no-repeat;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-size: 100% 100%;
-  display: block;
-  width: 100%;
-  height: 100%;
+    content: "";
+    background: url(./projector-screen.png) no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: 100% 100%;
+    display: block;
+    width: 100%;
+    height: 100%;
 }
+
 
 /*Big Chalkboard Section*/
+
 .intro {
-  background-color: #1e1e1e;
-  padding: 1em;
-  border: 15px solid #81d2af;
-  height: 560px;
-  line-height: 2;
-  margin-top: 10px;
-  overflow: hidden;
+    background-color: #1e1e1e;
+    padding: 1em;
+    border: 15px solid #81d2af;
+    height: 500px;
+    line-height: 2;
+    margin-top: 10px;
+    overflow: hidden;
 }
+
 .intro header {
-  background: url(./coral-md.png) no-repeat;
-  background-position: 90% 50%;
+    background: url(./coral-md.png) no-repeat;
+    background-size: 4em;
+    background-position: 100% 10%;
 }
-@media only screen and (min-width: 1200px) {
-  .intro header {
-    background: url(./flower-coral.png) no-repeat;
-    background-position: 90% 50%;
-  }
+
+@media only screen and (min-width: 768px) {
+    .intro header {
+        background: url(./flower-coral.png) no-repeat;
+        background-position: 100% 5%;
+        background-size: 4em;
+    }
 }
+
+@media only screen and (min-width: 1024px) {
+    .intro header {
+        background: url(./flower-coral.png) no-repeat;
+        background-position: 90% 10%;
+        background-size: 5.5em;
+    }
+}
+
 .intro::after {
-  content: "";
-  background: url(./projector2.png) no-repeat;
-  position: absolute;
-  bottom: 0;
-  left: 18%;
-  background-size: 100% 100%;
-  display: block;
-  width: 27%;
-  height: 27%;
+    content: "";
+    background: url(./desk.svg) no-repeat;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-size: 100% 100%;
+    display: none;
+    width: 52%;
+    height: 37%;
+    z-index: 5;
 }
+
+@media only screen and (min-width: 768px) {
+    .intro::after {
+        display: block;
+        bottom: 10%;
+        left: 0;
+        background-size: 88% 83%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .intro::after {
+        display: block;
+        bottom: 0;
+        left: 3%;
+    }
+}
+
 
 /*Long Side Chalkboard*/
+
 .wrapper {
-  background-color: #1e1e1e;
-  margin-top: 10px;
-  padding: 0.5em;
-  border: 10px solid #81d2af;
-  height: 100%;
-  overflow: hidden;
+    background-color: #1e1e1e;
+    margin-top: 10px;
+    padding: 0.5em;
+    border: 10px solid #f4c56a;
+    height: 800px;
+    overflow: hidden;
 }
 
+
 /*projector slide info*/
+
 .explanation,
 .participation,
 .benefits,
 .requirements {
-  margin-bottom: 3em;
-  margin-top: 2em;
-  flex-shrink: initial;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 90%;
-  opacity: 0;
+    margin-bottom: 1.5em;
+    margin-top: 2em;
+    flex-shrink: initial;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    opacity: 0;
+    z-index: 4;
 }
 
 footer {
-  position: absolute;
-  bottom: 50px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 90%;
-  opacity: 0;
+    position: absolute;
+    z-index: 3;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    opacity: 0;
 }
+
 footer a {
-  padding: 5px;
-  color: #3eaf7e;
+    padding: 5px;
+    color: #3eaf7e;
 }
+
 footer a:hover {
-  color: #e75443;
+    color: #e75443;
 }
 
 .explanation {
-  animation: explanation-animation 20s ease-out infinite;
+    animation: explanation-animation 20s ease-out infinite;
 }
 
 .participation {
-  animation: participation-animation 20s ease-out infinite;
+    animation: participation-animation 20s ease-out infinite;
 }
 
 .benefits {
-  animation: benefits-animation 20s ease-out infinite;
+    animation: benefits-animation 20s ease-out infinite;
 }
 
 .requirements {
-  animation: requirements-animation 20s ease-out infinite;
+    animation: requirements-animation 20s ease-out infinite;
 }
 
 footer {
-  animation: benefits-animation 20s ease-out infinite;
+    animation: benefits-animation 20s ease-out infinite;
 }
 
 @keyframes explanation-animation {
-  0% {
-    opacity: 100%;
-  }
-  15% {
-    opacity: 100%;
-  }
-  20% {
-    opacity: 0%;
-  }
-}
-@keyframes participation-animation {
-  0% {
-    opacity: 0%;
-  }
-  20% {
-    opacity: 0%;
-  }
-  25% {
-    opacity: 100%;
-  }
-  40% {
-    opacity: 100%;
-  }
-  45% {
-    opacity: 0%;
-  }
-}
-@keyframes benefits-animation {
-  0% {
-    opacity: 0%;
-  }
-  40% {
-    opacity: 0%;
-  }
-  50% {
-    opacity: 100%;
-  }
-  65% {
-    opacity: 100%;
-  }
-  70% {
-    opacity: 0%;
-  }
-}
-@keyframes footer-animation {
-  0% {
-    opacity: 0%;
-  }
-  40% {
-    opacity: 0%;
-  }
-  50% {
-    opacity: 100%;
-  }
-  65% {
-    opacity: 100%;
-  }
-  70% {
-    opacity: 0%;
-  }
-}
-@keyframes requirements-animation {
-  0% {
-    opacity: 0%;
-  }
-  70% {
-    opacity: 0%;
-  }
-  75% {
-    opacity: 100%;
-  }
-  95% {
-    opacity: 100%;
-  }
-  100% {
-    opacity: 0%;
-  }
-}
-/*NAVIGATION*/
-.sidebar {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-evenly;
-  padding-bottom: 10px;
-}
-.sidebar li:nth-child(1n+0) {
-  list-style-image: url("./flower-green.png");
-}
-.sidebar li:nth-child(2n+0) {
-  list-style-image: url("./flower-coralsm.png");
-}
-.sidebar li:nth-child(3n+0) {
-  list-style-image: url("./flower-yellowsm.png");
-}
-.sidebar::after {
-  content: "";
-  background: url(./grey-light.png) no-repeat;
-  position: absolute;
-  bottom: 140px;
-  left: 43%;
-  background-size: 100% 100%;
-  display: block;
-  width: 39%;
-  height: 76%;
-  opacity: 0;
-  animation: flickr 20s linear infinite;
-}
-@media only screen and (min-width: 500px) {
-  .sidebar::after {
-    background: hidden;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .sidebar::after {
-    grid-template-columns: 45% 38% 13%;
-    grid-column-gap: 2em;
-  }
+    0% {
+        opacity: 100%;
+    }
+    15% {
+        opacity: 100%;
+    }
+    20% {
+        opacity: 0%;
+    }
 }
 
-/*light animation*/
-@keyframes flickr {
-  10%, 30%, 60%, 75% {
-    opacity: 1;
-  }
-  20%, 40%, 72% {
-    opacity: 0;
-  }
+@keyframes participation-animation {
+    0% {
+        opacity: 0%;
+    }
+    20% {
+        opacity: 0%;
+    }
+    25% {
+        opacity: 100%;
+    }
+    40% {
+        opacity: 100%;
+    }
+    45% {
+        opacity: 0%;
+    }
 }
+
+@keyframes benefits-animation {
+    0% {
+        opacity: 0%;
+    }
+    40% {
+        opacity: 0%;
+    }
+    50% {
+        opacity: 100%;
+    }
+    65% {
+        opacity: 100%;
+    }
+    70% {
+        opacity: 0%;
+    }
+}
+
+@keyframes footer-animation {
+    0% {
+        opacity: 0%;
+    }
+    40% {
+        opacity: 0%;
+    }
+    50% {
+        opacity: 100%;
+    }
+    65% {
+        opacity: 100%;
+    }
+    70% {
+        opacity: 0%;
+    }
+}
+
+@keyframes requirements-animation {
+    0% {
+        opacity: 0%;
+    }
+    70% {
+        opacity: 0%;
+    }
+    75% {
+        opacity: 100%;
+    }
+    95% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0%;
+    }
+}
+
+
+/*NAVIGATION*/
+
+.sidebar {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding-bottom: 10px;
+}
+
+.sidebar li:nth-child(1n+0) {
+    list-style-image: url("./flower-green.png");
+}
+
+.sidebar li:nth-child(2n+0) {
+    list-style-image: url("./flower-coralsm.png");
+}
+
+.sidebar li:nth-child(3n+0) {
+    list-style-image: url("./flower-yellowsm.png");
+}
+
+.sidebar::after {
+    content: "";
+    background: url(./grey-light.png) no-repeat;
+    position: absolute;
+    bottom: 28%;
+    left: 44%;
+    background-size: 100% 100%;
+    display: none;
+    width: 38%;
+    height: 65%;
+    opacity: 0;
+    animation: flickr 20s linear infinite;
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .sidebar::after {
+        display: block;
+        bottom: 36%;
+        left: 38%;
+        height: 57%;
+        width: 36%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .sidebar::after {
+        display: block;
+        bottom: 30%;
+        left: 39%;
+        width: 44%;
+        height: 64%;
+    }
+}
+
+
+/*light animation*/
+
+@keyframes flickr {
+    10%,
+    30%,
+    60%,
+    75% {
+        opacity: 1;
+    }
+    20%,
+    40%,
+    72% {
+        opacity: 0;
+    }
+}
+
 .design-name,
 .designer-name,
 .design-archives a,
 .zen-resources a {
-  color: #ffffff;
+    color: #ffffff;
 }
 
 .design-name:hover,
 .designer-name:hover,
 .design-archives a:hover,
 .zen-resources a:hover {
-  color: #e75443;
+    color: #e75443;
 }
 
+
 /*# sourceMappingURL=style.scss.map*/
+
 
 /*# sourceMappingURL=style.css.map */
